@@ -93,7 +93,7 @@ public class Main {
         //esto no funciona porque estoy imprimiendo personas y tenddria que ser:
         for (Persona persona:personas){
             if(persona.getDni().equals(buscaDni)){//buscaDni = variable declarada para buscar dni en el otro for anterior
-                System.out.println(persona.getNombre());
+                System.out.println(persona.getNombreCompleto());
             }
         }
         //CORRECCIÓN
@@ -109,7 +109,7 @@ public class Main {
             System.out.println(dni + " " + persona.getNombreCompleto());
             
         }
-        
+        //LO SIGUIENTE ESTÄ MAL
         //recorrer el map y mostrar todos los dni (claves) y nombres (Valor):
         //guardamos los resultados en un set
         HashSet<Persona> listaPersonas = new HashSet();
